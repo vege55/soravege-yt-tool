@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>そらベジ YouTube分析ツール</title>
+<style>
+  :root { --bg:#fbfaf7; --fg:#23312a; --muted:#5d6e64; --line:#dfe5df; --accent:#3f7d58; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#161a18; --fg:#e7ece8; --muted:#9fada4; --line:#2c3531; --accent:#7fc29b; }
+  }
+  :root[data-theme="dark"] { --bg:#161a18; --fg:#e7ece8; --muted:#9fada4; --line:#2c3531; --accent:#7fc29b; }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height:1.85; font-size:16px;
+  }
+  main { max-width:680px; margin:0 auto; padding:56px 16px 80px; }
+  h1 { font-size:1.6rem; line-height:1.5; margin:0 0 8px; }
+  .lede { color:var(--muted); margin:0 0 40px; }
+  h2 { font-size:1.1rem; margin:40px 0 12px; padding-bottom:8px; border-bottom:1px solid var(--line); }
+  ul { padding-left:1.3em; }
+  li { margin-bottom:6px; }
+  a { color:var(--accent); }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>そらベジ YouTube分析ツール</h1>
+  <p class="lede">YouTubeチャンネル「そらベジ🥝ガーデンハック」の運営者が、自分のチャンネルの数値を毎週ふりかえるために使っている個人用のツールです。一般公開・配布はしていません。</p>
+
+  <h2>このツールができること</h2>
+  <ul>
+    <li>自分のチャンネルに投稿した動画の一覧と、公開日・再生時間を取得する</li>
+    <li>各動画の再生回数・平均視聴時間・平均再生率・登録者の増減を取得する</li>
+    <li>サムネイルの表示回数（インプレッション）とクリック率を取得する</li>
+    <li>視聴維持率のグラフから、視聴者が離脱した時点を割り出す</li>
+    <li>それらを直近10本の中央値と比べ、次の動画で改善すべき数値を1つ決める</li>
+  </ul>
+
+  <h2>使い方</h2>
+  <p>運営者のパソコン上でスクリプトを実行し、Googleアカウントでログインして自分のチャンネルのデータを読み取ります。読み取ったデータは、そのパソコンの中だけで集計されます。</p>
+
+  <h2>データの扱い</h2>
+  <p>取得したデータの保存先・利用範囲・第三者提供の有無については、<a href="./privacy.html">プライバシーポリシー</a>に記載しています。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>soragardenhack@gmail.com</p>
+
+  <footer>
+    <p>運営：そらベジ（個人事業主）<br>最終更新：2026年11月24日</p>
+  </footer>
+</main>
+</body>
+</html>
